@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}"class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="{{ url_for('index') }}#about">O nas</a>
+                    <a href="{{ url_for('index') }}#linki">Oferta</a>
+                    <a href="{{ url_for('rodo') }}">RODO</a>
+                    <a href="{{ url_for('index') }}#kontakt">Kontakt</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;wprost</p>
+                        <p>z&nbsp;natury.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Content-->
+            <section class="article">
+                <div class="container">
+                    <div class="text">
+                        <h2>Mocznik N46%</h2>
+                        <p> jest szybko działającym nawozem zawierającym azot w formie amidowej przechodzący w glebie w dostępna dla rośliny
+                            formę amonową a następnie azotanową. Jest nawozem uniwersalnym, stosowanym pod wszystkie rośliny uprawne zarówno przedsiewnie jak i pogłównie.
+                            Z uwagi na bardzo dobrą rozpuszczalność w wodzie może być stosowany dolistnie w stężeniu dostosowanym do wymagań dokarmianego gatunku i fazy rozwojowej rośliny. Zgodnie z obowiązującymi zaleceniami nawozowymi mocznik granulowany może być stosowany na każdej glebie nie wykazującej skrajnie kwaśnego bądź zasadowego odczynu. Mocznik N46% zastosowany pogłównie wymaga przykrycia warstwą gleby podczas wykonywania wiosennych zabiegów pielęgnacyjnych dla uniknięcia strat azotu. Przed wysiewem mocznik granulowany można mieszać z fosforanem amonowym, nawozami NPK i nawozami potasowymi.</p>
+                        <p class="under right"><span>Składniki pokarmowe:</span></p>
+                        <ul class="right">
+
+                            <li>Azot/N/ całkowity w formie amidowej - <span>46,0 % (m/m)</span></li>
+                            <li>&nbsp;</li>
+                            <li>Zawartość biuretu - <span>najwyżej 1,2% (m/m)</span></li>
+                            <li>&nbsp;</li>
+                            <li>Zawartość granulek o wymiarach 1-3,5 mm - <span>nie mniej niż 90%</span></li>
+                        </ul>
+                        <p>
+                            <span>PAKOWANIE</span>
+                        </p>
+                        <p>Mocznik pakowany jest w opakowania Big Bag 500&nbsp;kg i&nbsp;1000&nbsp;kg</p>
+                        <p>Opakowania można przewozić i&nbsp;składować maksymalnie w&nbsp;dwóch warstwach</p>
+
+                        <p class="under right"><span>ORIENTACYJNE DAWKI NAWOZU</span></p>
+                        <p class="under right">Zboża</p>
+                        <ul class="right">
+                            <li>Pszenica ozima - <span>170 - 280 kg/ha</span></li>
+                            <li>Pszenica jara i ozima - <span>150 - 260 kg/ha</span></li>
+                            <li>Jęczmień ozimy i jary pastewny - <span>150 - 260 kg/ha</span></li>
+                            <li>Jęczmień jary browarny - <span>65 - 90 kg/ha</span></li>
+                            <li>Owies, mieszanka zbożowa jara - <span>110 - 220 kg/ha</span></li>
+                        </ul>
+                        <p class="under right">Okopowe</p>
+                        <ul class="right">
+                            <li>Ziemniak - <span>130 - 260 kg/ha</span></li>
+                            <li>Burak cukrowy i pastewny - <span>280 - 390 kg/ha</span></li>
+                        </ul>
+                        <p class="under right">Pastewne</p>
+                        <ul class="right">
+                            <li>Bobik - <span>65 - 200 kg/ha</span></li>
+                            <li>Trawy - <span>170 - 230 kg/ha</span></li>
+                        </ul>
+                        <p><span>ŚRODKI OSTROŻNOŚCI:</span></p>
+                        <p>Nawóz może być produktem szkodliwym w przypadku połknięcia.
+                            W przypadku dostania się nawozu do oczu, przemyć dużą ilością czystej wody. Skontaktować się z lekarzem.
+                            Przy długotrwałych pracach manualnych używać środków ochrony dróg oddechowych i oczu. W przypadku rozsypania należy zebrać.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Kontakt</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Sp. z o.o., zarejestrowana w Rejestrze Przedsiębiorców Krajowego Rejestru Sądowego prowadzonym przez Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS&nbsp;0000293921, NIP&nbsp;7010104087, REGON&nbsp;141141116. Kapitał zakładowy w wysokości 50 000 zł opłacony w całości.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Realizacja&nbsp;Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{{ url_for('static', filename='js/whcookies.js') }}"></script>
+    </body>
+</html>

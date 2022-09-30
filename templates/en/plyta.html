@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}" class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="{{ url_for('en_index') }}#about">About&nbsp;us</a>
+                    <a href="{{ url_for('en_index') }}#linki">Offer</a>
+                    <a href="{{ url_for('rodo') }}">GDPR</a>
+                    <a href="{{ url_for('en_index') }}#kontakt">Contact</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;just</p>
+                        <p>by&nbsp;nature.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Content-->
+            <section class="article">
+                <div class="container">
+                    <div class="text">
+                        <h2>Oak and beech furniture board.</h2>
+                        <p> <img src="../static/img/plyta/plyta-paleta.jpg" alt="Płyta meblowa" class="img-left">
+                        </p>
+                        <p class="under right">Solid oak boards are available in following dimensions and classes:</p>
+                        <ul class="right">
+                            <li><span>dimensions:</span> thickness 18-45 mm, width up to 1300 mm, length up to 3000 mm</li>
+                            <li><span>class:</span> A/B, B/C, C/C, D/D, Rustic</li>
+                        </ul>
+                        <p class="under right">Oak boards with micro joints are available in following dimensions and classes:</p>
+                        <ul class="right">
+                            <li><span>dimensions:</span> thickness 18-45 mm, width up to 1300 mm, length up to 5000 mm</li>
+                            <li><span>class:</span> A/B, B/C, C/C, D/D, Rustic</li>
+                        </ul>
+                        <p class="under right">Solid beech boards are available in following dimensions and classes:</p>
+                        <ul class="right">
+                            <li><span>dimensions:</span> thickness 18-45 mm, width up to 1300 mm, length up to 3000 mm</li>
+                            <li><span>class:</span> A/B, B/C, C/C, D/D</li>
+                        </ul>
+                        <p class="under right">Beech boards with micro joints are available in following dimensions and classes:</p>
+                        <ul class="right">
+                            <li><span>dimensions:</span> thickness 18-45 mm, width up to 1300 mm, length up to 5000 mm</li>
+                            <li><span>class:</span> A/B, B/C, C/C, D/D</li>
+                        </ul>
+
+                        <p>Moisture content of the boards: 8% ± 2%</p>
+
+                        <p>Boards are ground according to the customer's expectations: P-80, P-100, P-120, P-150</p>
+                        <p>The first order is completed within 30-90 days, the next ones are completed according to the order schedule.</p>
+
+                        <p>In order to prepare a trade offer with the price, please specify the type, class and quantity for which we are to prepare an offer. We always present the offer as full truck deliveries, 26-28 m<sup>3</sup> for one transport.</p>
+                        <p>When ordering a smaller quantity, the delivery costs do not decrease and thus the cost of the product increases accordingly, which may translate into differences between the price submitted in the offer and the price included in the contract.</p>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Contact</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Ltd., registered in the Register of Entrepreneurs of the National Court Register maintained by the District Court for the Capital City of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, under KRS No. 0000293921, NIP 7010104087, REGON 141141116. Share capital of PLN 50,000 paid up in full.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Designed&nbsp;by Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

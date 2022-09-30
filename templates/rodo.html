@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}"class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="{{ url_for('index') }}#about">O nas</a>
+                    <a href="{{ url_for('index') }}#linki">Oferta</a>
+                    <a href="{{ url_for('rodo') }}">RODO</a>
+                    <a href="{{ url_for('index') }}#kontakt">Kontakt</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;wprost</p>
+                        <p>z&nbsp;natury.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Content-->
+            <section class="article">
+                <div class="container">
+                    <div class="text">
+                        <h2>Rozporządzenie o Ochronie Danych Osobowych.</h2>
+                        <p>W związku z wejściem w życie w dniu 25 maja 2018r. Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (dalej jako „RODO”), informujemy, że Administratorem danych osobowych przekazanych nam jest Faktor.az Sp. z o.o. z siedzibą w Warszawie ul. Lindleya 16, wpisanej do Rejestru Przedsiębiorców pod numerem KRS: 0000293921, dla której akta rejestrowe prowadzi Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, NIP: 7010104087, REGON: 141141116.</p>
+
+                        <ul>Można się z nami skontaktować:
+
+                            <li>listownie pod adresem: Lindleya 16, 02-013 Warszawa</li>
+                            <li>przez e-mail: biuro@faktor.az.pl</li>
+                            <li>telefonicznie: +48 517 401 400</li>
+                        </ul>
+
+                        <p>Informujemy, iż podanie danych jest niezbędne dla prawidłowego wykonania zlecenia, realizacji sprzedaży i innych powierzonych nam zadań. Będziemy przetwarzać Państwa dane osobowe w celu wykonania usługi lub sprzedaży (np. ewidencjonowanie wpłat), której Państwo są stroną, a podstawą prawną przetwarzania danych osobowych jest przepis art. 6 ust 1 pkt b) RODO</p>
+
+                        <p>Będziemy przechowywać Państwa dane osobowe do czasu rozliczenia zobowiązań wynikających z realizacji usług i/lub sprzedaży, a następnie w celach archiwalnych przez okres 6 lat, w zakresie imienia i nazwiska, adresu zamieszkania.</p>
+
+                        <ul>
+                            <li>Będzie przekazywać Państwa dane osobowe:</li>
+                            <li>dostawcom usług transportowych jeżeli będzie tego wymagało zlecenie</li>
+                            <li>dostawcom usług bankowych, prawnych i księgowych oraz wymiarowi sprawiedliwości.</li>
+                        </ul>
+
+                        <p>Przysługuje Państwu prawo dostępu do Państwa danych osobowych, żądania sprostowania, żądania usunięcia danych osobowych o ile zajdą przesłanki wskazane w RODO lub ograniczenia ich przetwarzania, jak również wycofania zgody na przetwarzanie danych.</p>
+
+                        <p>Mają Państwo także prawo do przenoszenia danych osobowych, tj. prawo otrzymania od nas danych osobowych w ustrukturyzowanym, powszechnie używanym formacie informatycznym nadającym się do odczytu maszynowego. Możecie Państwo przesłać te dane innemu administratorowi danych lub zażądać, abyśmy przesłali dane do innego administratora, o ile takie przesłanie jest technicznie możliwe. Prawo do przenoszenia danych osobowych przysługuje tylko co do tych danych, które przetwarzamy na podstawie umowy z Państwem lub na podstawie zgody.</p>
+
+                        <p>Aby skorzystać z powyższych praw, prosimy o kontakt z nami.</p>
+
+                        <p>Dodatkowo informujemy, iż przysługuje Państwu prawo wniesienia skargi do organu nadzorczego zajmującego się ochroną danych osobowych, tj. Prezesa Urzędu Ochrony Danych Osobowych.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Kontakt</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Sp. z o.o., zarejestrowana w Rejestrze Przedsiębiorców Krajowego Rejestru Sądowego prowadzonym przez Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS&nbsp;0000293921, NIP&nbsp;7010104087, REGON&nbsp;141141116. Kapitał zakładowy w wysokości 50 000 zł opłacony w całości.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Realizacja&nbsp;Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{{ url_for('static', filename='js/whcookies.js') }}"></script>
+    </body>
+</html>
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}"class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="#about">O nas</a>
+                    <a href="#linki">Oferta</a>
+                    <a href="{{ url_for('rodo') }}">RODO</a>
+                    <a href="#kontakt">Kontakt</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;wprost</p>
+                        <p>z&nbsp;natury.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- O nas-->
+            <section id="about">
+                <div class="container">
+                    <h1 class="section-title">O nas</h1>
+                    <div class="about-content">
+                        <img src="static/img/dab.png" alt="Logo Faktor.az" class="about-pic">
+                        <div class="about-text">
+
+                            <p>Nasza firma została wpisana do Krajowego Rejestru Sądowego 19.11.2007 roku i&nbsp;od tego czasu prowadzi nieprzerwanie działalność.</p>
+                            <p>Prowadzimy działalność handlową w zakresie handlu płytami wykonanymi w litego drewna oraz deskami, fryzami i lamelami z&nbsp;naturalnego drewna.</p>
+                            <p>Jako importer lub dystrybutor wprowadzamy również do obrotu towary spoza obszaru Unii Europejskiej. Dbamy o&nbsp;to aby produkty wprowadzane przez nas były najwyższej jakości.</p>
+                            <p>Przeszło dziesięcioletnie doświadczenie jest dla nas jednocześnie motywacją do dalszego rozwoju, zacieśniania współpracy z&nbsp;dotychczasowymi Klientami oraz zdobywaniu zaufania nowych Kontrahentów.</p>
+                            <p>Zapraszamy do zapoznania się z&nbsp;ofertą naszych produktów.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Zajawki-->
+            <section id="linki" class="zajawki">
+                <div class="container">
+                    <h1 class="section-title-black">Drewno</h1>
+                    <div class="linki">
+                        <div class="link">
+                            <a href="{{ url_for('plyta') }}"><img src="static/img/plyta.png"></a>
+                            <h4>Płyta meblowa dębowa i bukowa.</h4>
+                            <div class="buttons"><a href="{{ url_for('plyta') }}">Zobacz</a></div>
+                        </div>
+                        <div class="link">
+                            <a href="{{ url_for('deska') }}"><img src="static/img/tartak.jpg"></a>
+                            <h4>Tarcica dębowa i bukowa.</h4>
+                            <div class="buttons"><a href="{{ url_for('deska') }}">Zobacz</a></div>
+                        </div>
+                        <div class="link">
+                            <a href="{{ url_for('slupy') }}"><img src="static/img/slupy.jpg"></a>
+                            <h4>Słupy dębowe.</h4>
+                            <div class="buttons"><a href="{{ url_for('slupy') }}">Zobacz</a></div>
+                        </div>
+                    </div>
+                    <h1 class="section-title-white">Rolnictwo</h1>
+                    <div class="linki">
+                        <div class="link">
+                            <a href="{{ url_for('mocznik') }}"><img src="static/img/mocznik.jpg"></a>
+                            <h4>Mocznik N46%.</h4>
+                            <div class="buttons"><a href="{{ url_for('mocznik') }}">Zobacz</a></div>
+                        </div>
+                        <div class="link">
+                            <a href="{{ url_for('olej') }}"><img src="static/img/import/sunflower5l.png"></a>
+                            <h4>Olej słonecznikowy 5l.</h4>
+                            <div class="buttons"><a href="{{ url_for('olej') }}">Zobacz</a></div>
+                        </div>
+                        <div class="link">
+                            <a href="{{ url_for('olej') }}"><img src="static/img/import/sunflower1l.png"></a>
+                            <h4>Olej słonecznikowy 1l.</h4>
+                            <div class="buttons"><a href="{{ url_for('olej') }}">Zobacz</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Kontakt</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Sp. z o.o., zarejestrowana w Rejestrze Przedsiębiorców Krajowego Rejestru Sądowego prowadzonym przez Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS&nbsp;0000293921, NIP&nbsp;7010104087, REGON&nbsp;141141116. Kapitał zakładowy w wysokości 50 000 zł opłacony w całości.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Realizacja&nbsp;Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{{ url_for('static', filename='js/whcookies.js') }}"></script>
+    </body>
+</html>

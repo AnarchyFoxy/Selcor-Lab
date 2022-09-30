@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}"class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="{{ url_for('en_index') }}#about">About&nbsp;us</a>
+                    <a href="{{ url_for('en_index') }}#linki">Offer</a>
+                    <a href="{{ url_for('rodo') }}">GDPR</a>
+                    <a href="{{ url_for('en_index') }}#kontakt">Contact</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;just</p>
+                        <p>by&nbsp;nature.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Content-->
+            <section class="article">
+                <div class="container">
+                    <div class="text">
+                        <h2>Regulation on the protection of personal data.</h2>
+                        <p>In connection with its entry into force on 25 May 2018. Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data and repealing Directive 95/46/EC (General Data Protection Regulation) (hereinafter referred to as the "GDPR"), we would like to inform you that the controller of personal data provided is Factor. az Sp. z o.o. with its registered office in Warsaw at ul. Lindleya 16, entered into the Register of Entrepreneurs under KRS number: 0000293921, for which the registration files are kept by the District Court for the Capital City of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, NIP: 7010104087, REGON: 141141116.</p>
+
+                        <ul>You can contact us:
+
+                            <li>by post at the address: ul. Lindleya 16, 02-013 Warsaw</li>
+                            <li>by e-mail: biuro@faktor.az.pl</li>
+                            <li>by phone: +48 517 401 400</li>
+                        </ul>
+
+                        <p>We would like to inform you that providing data is necessary for proper execution of the order, sales and other tasks entrusted to us. We will process your personal data for the purpose of performing a service or sale (e.g. recording payments) to which you are a party, and the legal basis for the processing of personal data is the provision of Article 6(1)(b) of GDPR.</p>
+
+                        <p>We will keep your personal data until the obligations arising from the performance of the services and/or sales are settled and then for archival purposes for a period of 6 years, in terms of your name and address.</p>
+
+                        <ul>
+                            <li>We will pass on your personal data:</li>
+                            <li>to transport service providers if required by the order,</li>
+                            <li>to providers of banking, legal and accounting services and the administration of justice.</li>
+                        </ul>
+
+                        <p>You have the right to access your personal data, to request a rectification, to request the deletion of your personal data if the conditions indicated in the GDPR or to restrict their processing, as well as to withdraw your consent to data processing.</p>
+
+                        <p>You also have the right to transfer your personal data, i.e. the right to receive your personal data from us in a structured, commonly used, machine-readable IT format. You can send this data to another data controller or request that we send the data to another controller, if this is technically possible. The right to transfer personal data only applies to those data which we process on the basis of a contract with you or on the basis of your consent.</p>
+
+                        <p>To exercise the above-mentioned rights, please contact us.</p>
+
+                        <p>Additionally, we would like to inform you that you have the right to lodge a complaint with the supervisory body dealing with personal data protection, i.e. the President of the Office for Personal Data Protection.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Contact</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Ltd., registered in the Register of Entrepreneurs of the National Court Register maintained by the District Court for the Capital City of Warsaw in Warsaw, 12th Commercial Division of the National Court Register, under KRS No. 0000293921, NIP 7010104087, REGON 141141116. Share capital of PLN 50,000 paid up in full.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Designed&nbsp;by Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

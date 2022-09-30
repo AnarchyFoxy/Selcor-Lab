@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selcor Lab</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" href="favicon.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="container">
+                <a href="{{ url_for('index') }}"class="logo"></a>
+                <button class="menu-toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="{{ url_for('index') }}#about">O nas</a>
+                    <a href="{{ url_for('index') }}#linki">Oferta</a>
+                    <a href="{{ url_for('rodo') }}">RODO</a>
+                    <a href="{{ url_for('index') }}#kontakt">Kontakt</a>
+                    <a href="{{ url_for('index') }}">
+                        <img src="https://flagcdn.com/28x21/pl.png" srcset="https://flagcdn.com/56x42/pl.png 2x,
+        https://flagcdn.com/84x63/pl.png 3x" width="28" height="21" alt="Polska"></a>
+
+                    <a href="{{ url_for('en_index') }}">
+                        <img src="https://flagcdn.com/28x21/gb.png" srcset="https://flagcdn.com/56x42/gb.png 2x,
+        https://flagcdn.com/84x63/gb.png 3x" width="28" height="21" alt="Wielka Brytania"></a>
+
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!--Home-->
+            <section id="home">
+                <div class="container">
+                    <div class="content">
+                        <p>...&nbsp;wprost</p>
+                        <p>z&nbsp;natury.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Content-->
+            <section class="article">
+                <div class="container">
+                    <div class="text">
+                        <h2>Słupy dębowe.</h2>
+                        <p> <img src="static/img/slupy/slupy_produkcja.jpg" alt="Słupy dębowe" class="img-left">
+                        </p>
+                        <p class="under right">Słupy <span>dębowe klejone</span> dostępne są w rozmiarach i klasach: </p>
+                        <ul class="right">
+                            <li><span>rozmiar:</span> wysokość 90 mm, szerokość do 90 mm, długość do 2500 mm</li>
+                            <li><span>klasa:</span> A, B</li>
+                        </ul>
+
+                        <p>Wilgotność słupów: 8% ± 2%</p>
+
+                        <p> szlifowane są zgodnie z oczekiwaniem Klienta: P-80, P-100, P-120, P-150</p>
+                        <p>Czas realizacji pierwszego zamówienia wynosi 30-90 dni, kolejne realizowane są zgodnie z harmonogramem zamówienia.</p>
+
+                        <p>W celu przygotowania oferty handlowej z ceną, prosimy o określenie rodzaju, klasy i ilości dla której mamy przygotować ofertę. </p>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Kontakt-->
+            <section id="kontakt">
+                <div class="container">
+                    <h1 class="section-title">Kontakt</h1>
+                    <div class="kontaktowe">
+                        <div class="kontakt">
+                            <h4>Selcor Lab Sp. z o.o.</h4>
+                            <p>ul. Świętego Michała 100</p>
+                            <p>61-005 Poznań</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>e-mail: biuro@selcor.com</p>
+                            <p>Tel: +48 *** *** ***</p>
+                        </div>
+                        <div class="kontakt">
+                            <p>Selcor Lab Sp. z o.o., zarejestrowana w Rejestrze Przedsiębiorców Krajowego Rejestru Sądowego prowadzonym przez Sąd Rejonowy dla m. st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS&nbsp;0000293921, NIP&nbsp;7010104087, REGON&nbsp;141141116. Kapitał zakładowy w wysokości 50 000 zł opłacony w całości.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footers">
+                    <div class="footer">
+                        <h4>&copy;&nbsp;Selcor Lab&nbsp;Sp.&nbsp;z&nbsp;o.o.</h4>
+                    </div>
+                    <div class="footer">
+                        <h4>Realizacja&nbsp;Kyria Tech - Astryda Malinowska <i class="bi bi-code-square"></i></h4>
+                    </div>
+                    <div class="footer">
+                        <h4>&nbsp;</h4>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="{{ url_for('static', filename='js/whcookies.js') }}"></script>
+    </body>
+</html>
